@@ -179,6 +179,17 @@ a {
 }
 /* profile div  */
 
+/* admin home  */
+.table-div {
+  background-color: var(--color-white) !important;
+  padding: 10px !important;
+  border-radius: 10px;
+}
+.table-row:nth-child(odd) {
+  background-color: var(--color-lite-skyblue) !important;
+}
+/* admin home  */
+
 /* error page  */
 .empty-div {
   min-height: 80vh;
