@@ -39,7 +39,7 @@ const Register = () => {
     );
 
     if (success) {
-      navigate('/home');
+      navigate('/');
     }
   };
 
@@ -91,7 +91,7 @@ const Register = () => {
                 Register
               </button>
               <p className="p-text mt-2">
-                Already have an account? <Link to="/login">Click here</Link>{' '}
+                Already have an account? <Link to="/">Click here</Link>{' '}
               </p>
             </div>
           </div>

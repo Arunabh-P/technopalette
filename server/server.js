@@ -5,6 +5,8 @@ import projectRoute from './routes/projectRoute.js';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
+import cloudinary from 'cloudinary';
+
 dotenv.config();
 
 connectDb();

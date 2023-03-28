@@ -22,8 +22,8 @@ const userSchema = new Schema({
     required: true,
   },
   photo: {
-    type: String,
-    default: '',
+    public_id: String,
+    url: String,
   },
   height: {
     type: Number,
@@ -45,10 +45,7 @@ const userSchema = new Schema({
     type: String,
     default: 'user',
   },
-  isAdmin: {
-    type: Boolean,
-    default: false,
-  },
+
   createdAt: { type: Date, default: Date.now },
 });
 

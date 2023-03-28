@@ -1,8 +1,22 @@
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
-import { registerUserReducer } from './reducers/userReducer';
-const reducers = combineReducers({ registerUserReducer });
+import {
+  registerUserReducer,
+  loginUserReducer,
+  updateProfileReducer,
+} from './reducers/userReducer';
+import {
+  loginAdminrReducer,
+  getAllUsersReducer,
+} from './reducers/adminReducer';
+const reducers = combineReducers({
+  registerUserReducer,
+  updateProfileReducer,
+  loginUserReducer,
+  loginAdminrReducer,
+  getAllUsersReducer,
+});
 
 const store = createStore(
   reducers,

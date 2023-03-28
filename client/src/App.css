@@ -38,6 +38,30 @@ a {
   padding: 0;
   line-height: 28px;
 }
+.icon-style-1 {
+  color: var(--color-black);
+  cursor: pointer;
+}
+
+.input-style-2 {
+  padding: 18px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1px solid var(--color-gray) !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.input-select-1 {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--color-gray) !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.link-style-1:hover {
+  color: var(--color-blue);
+}
+.icon-style-1:hover {
+  color: var(--color-bright-red);
+}
 
 .headline {
   color: var(--color-black);
@@ -63,6 +87,19 @@ a {
 .button-1:hover {
   background-color: var(--color-red);
 }
+.button-2 {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 18px;
+  background-color: var(--color-skyblue);
+  cursor: pointer;
+}
+.button-2:hover {
+  background-color: var(--color-lite-skyblue);
+}
 .error-text {
   color: var(--color-red);
   font-weight: 400;
@@ -73,7 +110,6 @@ a {
 /* login page */
 .login-reg-page {
   min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,7 +125,7 @@ a {
   width: 49%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   border-radius: 30px;
   overflow: hidden;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -113,6 +149,47 @@ a {
 
 /* login page */
 
+/* navbar  */
+.navbar-div {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/* navbar  */
+
+/* home page  */
+.home-container {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-img {
+  width: 500px;
+}
+/* home page  */
+
+/* profile div  */
+.profile-details-div {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 15px;
+}
+.title-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* profile div  */
+
+/* error page  */
+.empty-div {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.not-found-img {
+  width: 350px;
+}
 /* media querry  */
 
 @media only screen and (max-width: 990px) {
@@ -134,6 +211,13 @@ a {
     width: 100%;
     border-radius: 0px;
   }
+  .home-img {
+    width: 400px;
+  }
 }
-
+@media only screen and (max-width: 540px) {
+  .home-img {
+    width: 280px;
+  }
+}
 /* media querry  */

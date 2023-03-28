@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom';
-import { loginUserAction } from '../actions/userAction';
-import LogInImg from '../images/banner/login.jpg';
+import { useNavigate } from 'react-router-dom';
+import { loginAdminAction } from '../actions/adminAction';
+import LogInImg from '../images/banner/adminLogin.jpg';
 
-const Login = () => {
+const AdminLogin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -19,10 +19,10 @@ const Login = () => {
       return;
     }
 
-    const success = await dispatch(loginUserAction({ email, password }));
+    const success = await dispatch(loginAdminAction({ email, password }));
 
     if (success) {
-      navigate('/');
+      navigate('/adminHome');
     }
   };
   return (
@@ -35,7 +35,7 @@ const Login = () => {
           ></div>
           <div className="login-reg-form-div">
             <div className="login-reg-form">
-              <h1 className="headline text-center mb-4">Login now</h1>
+              <h1 className="headline text-center mb-4">Admin Login</h1>
 
               <input
                 className="mb-4 input-style-1"
@@ -58,10 +58,6 @@ const Login = () => {
               <button onClick={handleLogin} className="button-1">
                 Login
               </button>
-              <p className="p-text mt-2">
-                Don't you have a account?{' '}
-                <Link to="/register">Register here</Link>{' '}
-              </p>
             </div>
           </div>
         </div>
@@ -70,4 +66,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default AdminLogin;
